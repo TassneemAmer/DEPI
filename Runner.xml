@@ -1,0 +1,39 @@
+<suite name="Suite1" verbose="1">
+    <!-- Run TC_01 and TC_03 on Edge -->
+    <test name="EdgeTests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.Login_Test_Detailed">
+                <methods>
+                    <include name="TC_01"/>
+                    <include name="TC_03"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Run TC_04 on Chrome -->
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.Login_Test_Detailed">
+                <methods>
+                    <include name="TC_04"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Run TC_10 and TC_11 on Firefox -->
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.Login_Test_Detailed">
+                <methods>
+                    <include name="TC_10"/>
+                    <include name="TC_11"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
