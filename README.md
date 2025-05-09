@@ -1,1 +1,1 @@
-# G7, the final project is in the second branch of the repository 
+# G7, the final project is in seperate branches of the repository 
